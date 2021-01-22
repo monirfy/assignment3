@@ -62,11 +62,11 @@ console.log(getHotelCost);
 // 04 - megaFriend Problem Solving
 //
 
-function megaFriend(friensName) {
+function megaFriend(friendsName) {
     var longestName = '';
-    for (var i = 0; i < friensName.length; i++) {
-        if (longestName.length < friensName[i].length) {
-            longestName = friensName[i];
+    for (var i = 0; i < friendsName.length; i++) {
+        if (longestName.length < friendsName[i].length) {
+            longestName = friendsName[i];
         }
     }
     return longestName;
