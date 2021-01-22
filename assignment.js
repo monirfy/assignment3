@@ -34,19 +34,19 @@ console.log(budgetResult);
 // 03 -  hotelCost Problem Solving
 //
 
-function hotelCost(night) {
+function hotelCost(dayCount) {
     var totalPrice = 0;
-    if (night <= 10) {
-        totalPrice = night * 100;
-    } else if (night <= 20) {
+    if (dayCount <= 10) {
+        totalPrice = dayCount * 100;
+    } else if (dayCount <= 20) {
         var firstStayPrice = 10 * 100;
-        var secondStay = night - 10;
+        var secondStay = dayCount - 10;
         var secondStayPrice = secondStay * 80;
         var totalPrice = firstStayPrice + secondStayPrice;
     } else {
         var firstStayPrice = 10 * 100;
         var secondStayPrice = 10 * 80;
-        var thirdStay = night - 20;
+        var thirdStay = dayCount - 20;
         var thirdStayPrice = thirdStay * 50;
         var totalPrice = firstStayPrice + secondStayPrice + thirdStayPrice;
     }
